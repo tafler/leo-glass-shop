@@ -1,0 +1,51 @@
+//colors
+    $color_blue: #4cb1ca;
+    $color_dark_blue: #39a0b9;
+    $color_darken_blue: #0b4b5a;
+    $color_grey: #eff1f0;
+    $color_green: #7db122;
+
+
+//mixins
+    @mixin font{
+        font-family: 'Open Sans', Tahoma, sans-serif;
+    }
+
+
+
+//globals styles
+    body{
+        font-size: 14px;
+        color: white;
+        @include font;
+        background: #fff;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    *{
+        outline: none;
+        box-sizing: border-box;
+    }
+    .circle-btn{
+        border: none;
+        border-radius: 50%;
+        background: $color_green;
+        color: white;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        &:hover{
+            background: darken($color_green, 20%);
+            filter: drop-shadow(1px 1px 0 darken($color_green, 40%));
+        }
+    }
