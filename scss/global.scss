@@ -22,6 +22,7 @@
     }
     ul{
         list-style: none;
+        margin: 0;
     }
     a{
         color: white;
@@ -44,8 +45,12 @@
         height: 45px;
         line-height: 45px;
         text-align: center;
+        cursor: pointer;
         &:hover{
             background: darken($color_green, 20%);
             filter: drop-shadow(1px 1px 0 darken($color_green, 40%));
         }
+    }
+    button{
+        cursor: pointer;
     }

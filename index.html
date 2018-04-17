@@ -17,38 +17,53 @@
 <body>
 
     <header class="header">
-        <div class="header__topbar">
+        <div class="header-wraper d-none d-lg-block">
             <div class="container">
-                <div class="header__topbar-locale">
-                    <div class="locale-lang">Language:</div>
-                    <div class="locale-currency">Currency:</div>
-                </div>
-                <div class="header__topbar-accounting">
-                    <ul>
-                        <li>
-                            <a href="#!">Account</a>
-                        </li>
-                        <li>
-                            <a href="#!">Wishlist</a>
-                        </li>
-                        <li>
-                            <a href="#!">Checkout</a>
-                        </li>
-                        <li>
-                            <a href="#!">Log in</a>
-                        </li>
-                        <li>
-                            <a href="#!">Sing in</a>
-                        </li>
-                    </ul>
+                <div class="header-topbar">
+                    <div class="header-topbar__locale">
+                        <div class="header-topbar__locale_lang">Language:
+                            <select name="lang">
+                                <option value="Russian">Russian</option>                                
+                                <option value="French">French</option>                                
+                                <option value="Spanish">Spanish</option>                                
+                                <option value="German">German</option>
+                            </select>
+                        </div>
+                        <div class="header-topbar__locale_currency">Currency:
+                            <select name="curr">
+                                <option value="RUB">RUB</option>                                
+                                <option value="EUR">EUR</option>                                
+                                <option value="USD">USD</option>       
+                            </select>
+                        </div>
+                    </div>
+                    <div class="header-topbar__accounting">
+                        <ul>
+                            <li>
+                                <a href="#!">Account</a>
+                            </li>
+                            <li>
+                                <a href="#!">Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="#!">Checkout</a>
+                            </li>
+                            <li>
+                                <a href="#!">Log in</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sing in</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="header__nav">
+        <div class="header-nav">
             <div class="container">
                 <div class="row">
-                    <div class="nav-logo col"><h1>LEO SHOP</h1></div>
-                    <div class="nav-main col">
+                    <div class="header-nav__logo col-3 col-md-3"><h1>LEO SHOP</h1></div>
+                    <div class="header-nav__main col-md-5 d-none d-lg-block">
                         <ul>
                             <li>
                                 <a href="#!">Home</a>
@@ -67,225 +82,225 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="nav-rightblock col">
-                        <div class="nav-find">
+                    <div class="header-nav__searchblock col-7 col-md-4">
+                        <div class="header-nav__find">
                             <input type="text" placeholder="Search..">
                         </div>
-                        <div class="nav-tags-btn circle-btn"><i class="fas fa-tags"></i></div>
-                        <div class="nav-cart-btn circle-btn"><i class="fas fa-shopping-cart"></i></div>
-                        <span class="nav-cart-text">cart (0)</span>
+                        <div class="header-nav__btn-tags circle-btn"><i class="fas fa-tags"></i></div>
+                        <div class="header-nav__btn-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                        <span class="header-nav__cart-text">cart (0)</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="slider">
-        <div class="slider-item">
-            <img src="#" alt="">
-            <p> Aluminum club
+    <div class="slider d-none d-md-block">
+        <div class="slider__item">
+            <img src="img/slider1.jpg" alt="">
+            <p>
+                <b>Aluminum club</b> 
                 <b>Experience ray-ban</b>
             </p>
         </div>
     </div>
 
-
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10">
                 <div class="main">
-                    <div class="content">
+                    <div class="main-content">
                         <h2>Featured Products</h2>
                         <div class="row">
-                            <div class="col-6 col-md-3">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod1.png" alt="">
+                            <div class="col-6 col-md-4">
+                                <div class="prod prod_sale">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod1.jpg" alt="">
                                     </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Lorem Ipsum is simply.</span>
-                                        <span class="prod-price">388.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod2.png" alt="">
-                                    </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Nullam vestibulum.</span>
-                                        <span class="prod-price">90.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Lorem Ipsum is simply.</p>
+                                        <span class="prod__txtbox__price">388.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod3.png" alt="">
+                            <div class="col-6 col-md-4">
+                                <div class="prod prod_new">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod2.jpg" alt="">
                                     </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Donec et lorem suscipit.</span>
-                                        <span class="prod-price">300.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod4.png" alt="">
-                                    </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Curabitur pretium dui.</span>
-                                        <span class="prod-price">180.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Nullam vestibulum.</p>
+                                        <span class="prod__txtbox__price">90.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod5.png" alt="">
+                            <div class="col-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod3.jpg" alt="">
                                     </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Lorem Ipsum is simply </span>
-                                        <span class="prod-price">278.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod6.png" alt="">
-                                    </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Sed tempus tellus .</span>
-                                        <span class="prod-price">380.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Donec et lorem suscipit.</p>
+                                        <span class="prod__txtbox__price">300.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod7.png" alt="">
+                            <div class="col-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod4.jpg" alt="">
                                     </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Lorem Ipsum is simply</span>
-                                        <span class="prod-price">500.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod8.png" alt="">
-                                    </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Etiam egestas velit</span>
-                                        <span class="prod-price">200.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Curabitur pretium dui.</p>
+                                        <span class="prod__txtbox__price">180.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod9.png" alt="">
+                            <div class="col-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod5.jpg" alt="">
                                     </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Mauris viverra magna.</span>
-                                        <span class="prod-price">370.00
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Lorem Ipsum is simply </p>
+                                        <span class="prod__txtbox__price">278.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod6.jpg" alt="">
+                                    </div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Sed tempus tellus .</p>
+                                        <span class="prod__txtbox__price">380.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod7.jpg" alt="">
+                                    </div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Lorem Ipsum is simply</p>
+                                        <span class="prod__txtbox__price">500.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod8.jpg" alt="">
+                                    </div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Etiam egestas velit</p>
+                                        <span class="prod__txtbox__price">200.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod9.jpg" alt="">
+                                    </div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Mauris viverra magna.</p>
+                                        <span class="prod__txtbox__price">370.00
                                         </span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="content">
+                    <div class="main-content">
                         <h2>Staff pick</h2>
                         <div class="row">
-                            <div class="col">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod9.png" alt="">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod9.jpg" alt="">
                                     </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Mauris viverra magna.</span>
-                                        <span class="prod-price">370.00
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Mauris viverra magna.</p>
+                                        <span class="prod__txtbox__price">370.00
                                         </span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod5.png" alt="">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod5.jpg" alt="">
                                     </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Lorem Ipsum is simply </span>
-                                        <span class="prod-price">278.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Lorem Ipsum is simply </p>
+                                        <span class="prod__txtbox__price">278.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod3.png" alt="">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod3.jpg" alt="">
                                     </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Donec et lorem suscipit.</span>
-                                        <span class="prod-price">300.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Donec et lorem suscipit.</p>
+                                        <span class="prod__txtbox__price">300.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>        
-                    <div class="content">
+                    <div class="main-content">
                         <h2>New Products</h2>
                         <div class="row">
-                            <div class="col">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod6.png" alt="">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod6.jpg" alt="">
                                     </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Sed tempus tellus .</span>
-                                        <span class="prod-price">380.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod3.png" alt="">
-                                    </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Donec et lorem suscipit.</span>
-                                        <span class="prod-price">300.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Sed tempus tellus .</p>
+                                        <span class="prod__txtbox__price">380.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="prod__block">
-                                    <div class="prod__block-imgbox">
-                                        <img src="img/products/prod4.png" alt="">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod3.jpg" alt="">
                                     </div>
-                                    <div class="prod__block-txtbox">
-                                        <span class="prod-name">Curabitur pretium dui.</span>
-                                        <span class="prod-price">180.00</span>
-                                        <div class="prod-cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Donec et lorem suscipit.</p>
+                                        <span class="prod__txtbox__price">300.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="prod">
+                                    <div class="prod__imgbox">
+                                        <img src="img/products/prod4.jpg" alt="">
+                                    </div>
+                                    <div class="prod__txtbox">
+                                        <p class="prod__txtbox__name">Curabitur pretium dui.</p>
+                                        <span class="prod__txtbox__price">180.00</span>
+                                        <div class="prod__txtbox__cart circle-btn"><i class="fas fa-shopping-cart"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -293,54 +308,55 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 d-none d-lg-block">
                 <aside>
-                    <div class="aside-wraper">
-                        <div class="aside-firstbox">
-                            <h3>featured glass</h3>
-                            <div class="firstbox-slider">
-                                <picture>
-                                    <img src="" alt="">
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="aside-secondbox">
-                            <h3>Newsletters signup</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                            <form action="#">
-                                <input type="text">
-                                <input type="submit" value="Subscribe">
-                            </form>
+                    <div class="aside-box">
+                        <h3>featured glass</h3>
+                        <div class="aside-box__slider">
+                            <picture>
+                                <img src="img/aside/aside1.jpg" alt="">
+                            </picture>
+                            <hr>
                         </div>
                     </div>
+                    <div class="aside-box aside-box_text">
+                        <h3>Newsletters signup</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        <hr>
+                        <form action="#">
+                            <input type="text">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>                    
                 </aside>
             </div>
         </div>
     </div>
+
     <footer class="footer">
-        <div class="footer__top">
+        <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="footer__top-block col">
+                    <div class="footer-top__block col-12 col-md-6 clearfix">
                         <div class="circle-btn"><i class="fas fa-truck"></i></div>
                         <h3>Free shipping on orders over $100</h3>
                     </div>
-                    <div class="footer__top-block col">
+                    <div class="footer-top__block col-12 col-md-6 clearfix">
                         <div class="circle-btn"><i class="fas fa-phone"></i></div>
                         <h3>call us! toLl free- 409-8888-0099 </h3>
                     </div>
                 </div>  
             </div>
         </div>
-        <div class="footer__mid">
+        <div class="footer-mid">
             <div class="container">
                 <div class="row">
-                    <div class="footer__mid-block col">
+                    <div class="faceblock col-6 col-md-3">
                         <h4>Facebook</h4>
-                        <span class="face-members">20000 Members</span>
+                        <span class="faceblock__count-of-members">20000 Members</span>
                         <img src="#" alt="" class="face-like">
                         <hr>
-                        <ul class="face-lastmembers">
+                        <ul class="faceblock__last-members d-none d-lg-block">
                             <li>
                                 <img src="img/socials/faces1.jpg" alt="" srcset="">
                             </li>
@@ -369,59 +385,63 @@
                         <hr>
                         <a href="#">Faceboock social plugin</a>
                     </div>
-                    <div class="footer__mid-block col">
+                    <div class="twitblock col-6 col-md-3">
                         <h4>From Twitter</h4>
-                        <div class="footer-tweet">
+                        <div class="twitblock__comment">
                             <div class="circle-btn"><i class="fab fa-twitter"></i></div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate praesentium voluptate adipisci
-                                dignissimos deleniti id eum aliquid rerum veritatis.</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard </p>
                         </div>
-                        <div class="footer-tweet">
+                        <div class="twitblock__comment d-none d-lg-block">
                             <div class="circle-btn"><i class="fab fa-twitter"></i></div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia accusamus vero est laudantium
-                                quos necessitatibus alias deleniti repudiandae veritatis rerum?</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                 Lorem Ipsum has been the industry's standard </p>
                         </div>
                     </div>
-                    <div class="footer__mid-block col">
+                    <div class="infoblock col-6 col-md-3">
                         <h4>Information</h4>
-                        <li>
-                            <a href="#!">Sed ultrices purus non.</a>
-                        </li>
-                        <li>
-                            <a href="#!">sodales sodales</a>
-                        </li>
-                        <li>
-                            <a href="#!">Curabitur pretium dui vitae.</a>
-                        </li>
-                        <li>
-                            <a href="#!">Donec gravida mi in nisl </a>
-                        </li>
-                        <li>
-                            <a href="#!">faucibus leo condimentum.</a>
-                        </li>
-                        <li>
-                            <a href="#!">Donec et lorem suscipit.</a>
-                        </li>
+                        <ul class="d-none d-lg-block">
+                            <li>
+                                <a href="#!">Sed ultrices purus non.</a>
+                            </li>
+                            <li>
+                                <a href="#!">sodales sodales</a>
+                            </li>
+                            <li>
+                                <a href="#!">Curabitur pretium dui vitae.</a>
+                            </li>
+                            <li>
+                                <a href="#!">Donec gravida mi in nisl </a>
+                            </li>
+                            <li>
+                                <a href="#!">faucibus leo condimentum.</a>
+                            </li>
+                            <li>
+                                <a href="#!">Donec et lorem suscipit.</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="footer__mid-block col">
+                    <div class="contactblock col-6 col-md-3">
                         <h4>Contact us</h4>
-                        <li>
-                            <a href="#">Leo Store</a>
-                        </li>
-                        <li>
-                            <a href="#">Leopard Media</a>
-                        </li>
-                        <li>
-                            <a href="#">KVM Rpad, 4590GH</a>
-                        </li>
-                        <li>
-                            <a href="#">+1 489-8888-0099</a>
-                        </li>
-                        <li>
-                            <a href="#">mail@email.com</a>
-                        </li>
+                        <ul class="d-none d-lg-block">
+                            <li>
+                                <a href="#">Leo Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Leopard Media</a>
+                            </li>
+                            <li>
+                                <a href="#">KVM Rpad, 4590GH</a>
+                            </li>
+                            <li>
+                                <a href="#">+1 489-8888-0099</a>
+                            </li>
+                            <li>
+                                <a href="#">mail@email.com</a>
+                            </li>
+                        </ul>
                         <hr>
-                        <div class="footer-contact-socials">
+                        <div class="contactblock__socials d-none d-lg-block">
                             <div class="circle-btn"><i class="fab fa-google-plus-g"></i></div>
                             <div class="circle-btn"><i class="fab fa-linkedin-in"></i></div>
                             <div class="circle-btn"><i class="fas fa-rss"></i></div>
@@ -431,11 +451,11 @@
                 </div>
             </div>
         </div>
-        <div class="footer__bot">
+        <div class="footer-bott">
             <div class="container">
-                <div class="footer__bot-wrap">
+                <div class="footer-bott-wrap">
                     <p>© Copyright 2013 Css Author, All Rights Reserved.</p>
-                    <ul>
+                    <ul  class="d-none d-lg-block">
                         <li>
                             <a href="#!">About Us</a>
                         </li>
